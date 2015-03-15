@@ -7,19 +7,19 @@ import level.Wall;
 
 import org.junit.Test;
 
-public class TestLevelData {
+public class TestUpperAndLowerColumn {
 
 	@Test
 	public void test() {
 	Level level = new Level();
 	Wall wall = new Wall();
-	Cell[][] cell = new Cell[level.getROWS()][level.getCOLUMNS()];
+	Cell[][] cell = new Cell[level.ROW_LENGTH][level.COLUMN_HEIGHT];
 	
 	cell = level.getLevelData();
 	
 	for (int i = 0; i < cell.length; i++) {
 		assertEquals(cell[i][0].isWall(), true);
-		assertEquals(cell[i][level.COLUMNS_HEIGHT - 1].isWall(), true);
+		assertEquals(cell[i][level.COLUMN_HEIGHT - 1].isWall(), true);
 		}
 	}
 }

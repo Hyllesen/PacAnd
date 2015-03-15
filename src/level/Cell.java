@@ -21,4 +21,21 @@ public class Cell {
 		} 
 		return false;
 	}
+	
+	public boolean isField() {
+		if(field != null) {
+			return true;
+		}
+		return false;
+	}
+	
+	public String toString() {
+		if(isWall()) {
+			return "W";
+		}
+		if(isField()) {
+			return "F";
+		}
+		return "ND";
+	}
 }
