@@ -1,4 +1,5 @@
 package level;
+
 /**
  * Indeholder data som skal bruges til level og diverse objekter der bliver brugt i level
  * @author hylle
@@ -50,9 +51,5 @@ public class Level {
 		
 		//Just a field somewhere for shortest path testing
 		levelData[10][11] = new Cell(new Field());
-		
-
-
-		
 	}
 }
