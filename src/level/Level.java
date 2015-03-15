@@ -48,11 +48,8 @@ public class Level {
 			levelData[10][i] = new Cell(new Wall());
 		}
 		
-		
-		
-		
-		
-		
+		//Just a field somewhere for shortest path testing
+		levelData[10][11] = new Cell(new Field());
 		
 
 
